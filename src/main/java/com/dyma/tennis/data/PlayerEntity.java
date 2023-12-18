@@ -31,21 +31,12 @@ public class PlayerEntity {
     public PlayerEntity() {
     }
 
-    public PlayerEntity(Long id, String lastName, String firstName, LocalDate birthDate, Integer points, Integer rank) {
-        this.id = id;
+    public PlayerEntity(String lastName, String firstName, LocalDate birthDate, Integer points, Integer rank) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.birthDate = birthDate;
         this.points = points;
         this.rank = rank;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getLastName() {
@@ -64,15 +55,21 @@ public class PlayerEntity {
         this.firstName = firstName;
     }
 
-    public LocalDate getBirthDate() { return birthDate; }
+    public LocalDate getBirthDate() {
+        return birthDate;
+    }
 
-    public void setBirthDate(LocalDate birthDate) { this.birthDate = birthDate; }
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
+    }
 
     public Integer getPoints() {
         return points;
     }
 
-    public void setPoints(Integer points) { this.points = points; }
+    public void setPoints(Integer points) {
+        this.points = points;
+    }
 
     public Integer getRank() {
         return rank;
