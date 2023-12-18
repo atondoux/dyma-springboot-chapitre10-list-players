@@ -6,7 +6,7 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "player", schema = "public")
-public class Player {
+public class PlayerEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,10 +28,10 @@ public class Player {
     @Column(name = "rank", nullable = false)
     private Integer rank;
 
-    public Player() {
+    public PlayerEntity() {
     }
 
-    public Player(Long id, String lastName, String firstName, LocalDate birthDate, Integer points, Integer rank) {
+    public PlayerEntity(Long id, String lastName, String firstName, LocalDate birthDate, Integer points, Integer rank) {
         this.id = id;
         this.lastName = lastName;
         this.firstName = firstName;
